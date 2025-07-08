@@ -1,6 +1,4 @@
-FROM openjdk:8-jdk-alpine
-
-COPY target/*.jar /app.jar
+FROM redisdeveloper/rmdb-db-to-streams:1.0.0
 
 ENV REDIS_HOST=redis-service
 ENV REDIS_PORT=6379

@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM redisdeveloper/rmdb-mysql:1.0.0
 
 LABEL maintainer="Debezium Community & Tugdual Grall"
 

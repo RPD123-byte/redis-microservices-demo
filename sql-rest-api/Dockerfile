@@ -1,6 +1,4 @@
-FROM openjdk:8-jdk-alpine
-
-COPY target/*.jar /app.jar
+FROM redisdeveloper/rmdb-sql-rest-api:1.0.0
 
 ENV SPRING_DATASOURCE_URL=jdbc:mysql://app-mysql:3306/inventory
 ENV SPRING_DATASOURCE_USERNAME=mysqluser

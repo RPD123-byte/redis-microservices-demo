@@ -1,11 +1,4 @@
-FROM node:10
-
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
-COPY . .
+FROM redisdeveloper/rmdb-comments:1.0.0
 
 ENV  REDIS_HOST=redis-service
 ENV  REDIS_PORT=6379
